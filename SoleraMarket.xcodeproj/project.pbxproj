@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C7C1EC01C99646000AD719A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1EBF1C99646000AD719A /* AppDelegate.swift */; };
+		6C7C1EC21C99646000AD719A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC11C99646000AD719A /* ViewController.swift */; };
+		6C7C1EC51C99646000AD719A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC31C99646000AD719A /* Main.storyboard */; };
+		6C7C1EC71C99646000AD719A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC61C99646000AD719A /* Assets.xcassets */; };
+		6C7C1ECA1C99646000AD719A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */; };
+		6C7C1ED51C99646000AD719A /* SoleraMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1ED41C99646000AD719A /* SoleraMarketTests.swift */; };
+		6C7C1EE01C99646000AD719A /* SoleraMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1EDF1C99646000AD719A /* SoleraMarketUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C7C1ED11C99646000AD719A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C7C1EB41C99646000AD719A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C7C1EBB1C99646000AD719A;
+			remoteInfo = SoleraMarket;
+		};
+		6C7C1EDC1C99646000AD719A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C7C1EB41C99646000AD719A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C7C1EBB1C99646000AD719A;
+			remoteInfo = SoleraMarket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C7C1EBC1C99646000AD719A /* SoleraMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoleraMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7C1EBF1C99646000AD719A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C7C1EC11C99646000AD719A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C7C1EC41C99646000AD719A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C7C1EC61C99646000AD719A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C7C1EC91C99646000AD719A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C7C1ECB1C99646000AD719A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7C1ED01C99646000AD719A /* SoleraMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleraMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7C1ED41C99646000AD719A /* SoleraMarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleraMarketTests.swift; sourceTree = "<group>"; };
+		6C7C1ED61C99646000AD719A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7C1EDB1C99646000AD719A /* SoleraMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleraMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7C1EDF1C99646000AD719A /* SoleraMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleraMarketUITests.swift; sourceTree = "<group>"; };
+		6C7C1EE11C99646000AD719A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C7C1EB91C99646000AD719A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ECD1C99646000AD719A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ED81C99646000AD719A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C7C1EB31C99646000AD719A = {
+			isa = PBXGroup;
+			children = (
+				6C7C1EBE1C99646000AD719A /* SoleraMarket */,
+				6C7C1ED31C99646000AD719A /* SoleraMarketTests */,
+				6C7C1EDE1C99646000AD719A /* SoleraMarketUITests */,
+				6C7C1EBD1C99646000AD719A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C7C1EBD1C99646000AD719A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1EBC1C99646000AD719A /* SoleraMarket.app */,
+				6C7C1ED01C99646000AD719A /* SoleraMarketTests.xctest */,
+				6C7C1EDB1C99646000AD719A /* SoleraMarketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C7C1EBE1C99646000AD719A /* SoleraMarket */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1EBF1C99646000AD719A /* AppDelegate.swift */,
+				6C7C1EC11C99646000AD719A /* ViewController.swift */,
+				6C7C1EC31C99646000AD719A /* Main.storyboard */,
+				6C7C1EC61C99646000AD719A /* Assets.xcassets */,
+				6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */,
+				6C7C1ECB1C99646000AD719A /* Info.plist */,
+			);
+			path = SoleraMarket;
+			sourceTree = "<group>";
+		};
+		6C7C1ED31C99646000AD719A /* SoleraMarketTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1ED41C99646000AD719A /* SoleraMarketTests.swift */,
+				6C7C1ED61C99646000AD719A /* Info.plist */,
+			);
+			path = SoleraMarketTests;
+			sourceTree = "<group>";
+		};
+		6C7C1EDE1C99646000AD719A /* SoleraMarketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1EDF1C99646000AD719A /* SoleraMarketUITests.swift */,
+				6C7C1EE11C99646000AD719A /* Info.plist */,
+			);
+			path = SoleraMarketUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C7C1EBB1C99646000AD719A /* SoleraMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7C1EE41C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarket" */;
+			buildPhases = (
+				6C7C1EB81C99646000AD719A /* Sources */,
+				6C7C1EB91C99646000AD719A /* Frameworks */,
+				6C7C1EBA1C99646000AD719A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoleraMarket;
+			productName = SoleraMarket;
+			productReference = 6C7C1EBC1C99646000AD719A /* SoleraMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C7C1ECF1C99646000AD719A /* SoleraMarketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7C1EE71C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarketTests" */;
+			buildPhases = (
+				6C7C1ECC1C99646000AD719A /* Sources */,
+				6C7C1ECD1C99646000AD719A /* Frameworks */,
+				6C7C1ECE1C99646000AD719A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C7C1ED21C99646000AD719A /* PBXTargetDependency */,
+			);
+			name = SoleraMarketTests;
+			productName = SoleraMarketTests;
+			productReference = 6C7C1ED01C99646000AD719A /* SoleraMarketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C7C1EDA1C99646000AD719A /* SoleraMarketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7C1EEA1C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarketUITests" */;
+			buildPhases = (
+				6C7C1ED71C99646000AD719A /* Sources */,
+				6C7C1ED81C99646000AD719A /* Frameworks */,
+				6C7C1ED91C99646000AD719A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C7C1EDD1C99646000AD719A /* PBXTargetDependency */,
+			);
+			name = SoleraMarketUITests;
+			productName = SoleraMarketUITests;
+			productReference = 6C7C1EDB1C99646000AD719A /* SoleraMarketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C7C1EB41C99646000AD719A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Arcuna;
+				TargetAttributes = {
+					6C7C1EBB1C99646000AD719A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6C7C1ECF1C99646000AD719A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 6C7C1EBB1C99646000AD719A;
+					};
+					6C7C1EDA1C99646000AD719A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 6C7C1EBB1C99646000AD719A;
+					};
+				};
+			};
+			buildConfigurationList = 6C7C1EB71C99646000AD719A /* Build configuration list for PBXProject "SoleraMarket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C7C1EB31C99646000AD719A;
+			productRefGroup = 6C7C1EBD1C99646000AD719A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C7C1EBB1C99646000AD719A /* SoleraMarket */,
+				6C7C1ECF1C99646000AD719A /* SoleraMarketTests */,
+				6C7C1EDA1C99646000AD719A /* SoleraMarketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C7C1EBA1C99646000AD719A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7C1ECA1C99646000AD719A /* LaunchScreen.storyboard in Resources */,
+				6C7C1EC71C99646000AD719A /* Assets.xcassets in Resources */,
+				6C7C1EC51C99646000AD719A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ECE1C99646000AD719A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ED91C99646000AD719A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C7C1EB81C99646000AD719A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7C1EC21C99646000AD719A /* ViewController.swift in Sources */,
+				6C7C1EC01C99646000AD719A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ECC1C99646000AD719A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7C1ED51C99646000AD719A /* SoleraMarketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7C1ED71C99646000AD719A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7C1EE01C99646000AD719A /* SoleraMarketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C7C1ED21C99646000AD719A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C7C1EBB1C99646000AD719A /* SoleraMarket */;
+			targetProxy = 6C7C1ED11C99646000AD719A /* PBXContainerItemProxy */;
+		};
+		6C7C1EDD1C99646000AD719A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C7C1EBB1C99646000AD719A /* SoleraMarket */;
+			targetProxy = 6C7C1EDC1C99646000AD719A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C7C1EC31C99646000AD719A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7C1EC41C99646000AD719A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7C1EC91C99646000AD719A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C7C1EE21C99646000AD719A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C7C1EE31C99646000AD719A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C7C1EE51C99646000AD719A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SoleraMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C7C1EE61C99646000AD719A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SoleraMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C7C1EE81C99646000AD719A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoleraMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoleraMarket.app/SoleraMarket";
+			};
+			name = Debug;
+		};
+		6C7C1EE91C99646000AD719A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoleraMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoleraMarket.app/SoleraMarket";
+			};
+			name = Release;
+		};
+		6C7C1EEB1C99646000AD719A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoleraMarketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoleraMarket;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6C7C1EEC1C99646000AD719A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoleraMarketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcuna.SoleraMarketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoleraMarket;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C7C1EB71C99646000AD719A /* Build configuration list for PBXProject "SoleraMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7C1EE21C99646000AD719A /* Debug */,
+				6C7C1EE31C99646000AD719A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7C1EE41C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7C1EE51C99646000AD719A /* Debug */,
+				6C7C1EE61C99646000AD719A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C7C1EE71C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7C1EE81C99646000AD719A /* Debug */,
+				6C7C1EE91C99646000AD719A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C7C1EEA1C99646000AD719A /* Build configuration list for PBXNativeTarget "SoleraMarketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7C1EEB1C99646000AD719A /* Debug */,
+				6C7C1EEC1C99646000AD719A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C7C1EB41C99646000AD719A /* Project object */;
+}
