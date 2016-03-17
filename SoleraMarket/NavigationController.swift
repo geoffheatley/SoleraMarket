@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NavigationController.swift
 //  SoleraMarket
 //
 //  Created by Geoff Heatley on 16/03/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
