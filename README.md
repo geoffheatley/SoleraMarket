@@ -6,7 +6,8 @@
 
 - Universal Application for iOS7+
 
-SoleraMarket is a concise little demo supermarket app for connecting to JSONRates API and converting between currencies on the fly.
+SoleraMarket is a concise little demo supermarket app for connecting to JSONRates API and converting between currencies.
+
 Shop til you drop as long as you like Eggs, Peas, Milk and Beans.
 
 ## Device Testing
@@ -24,5 +25,5 @@ SoleraMarket has been tested on the following device configurations;
 
 - Clone and then open SoleraMarket.xcodeproj with XCode 7
 - To deploy to device, you will need to edit the project settings to your own code signing identity & provisioning
-- 'Login' and go nuts
+- 'Login' and happy shopping
 
