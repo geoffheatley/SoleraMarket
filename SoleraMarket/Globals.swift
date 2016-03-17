@@ -19,10 +19,9 @@ let kExtension_live = "live"
 let kKey_accessKey = "access_key"
 let kKey_currencies = "currencies"
 let kContentType = "application/json; charset=utf-8"
-
 let kArrayCurrencies = ["USD", "GBP", "EUR", "JPY", "AUD", "CAD"]
-
 let kKey_JSONRates = "JsonRates_API_AccessKey"
+let kMessageConnectionFailure = "Failed to obtain live currency data.\n Try again later."
 
 
 

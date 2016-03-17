@@ -78,9 +78,9 @@ class CheckoutViewController: BaseCollectionViewController {
     @IBAction func currencyButtonPressed(sender: UIBarButtonItem) {
     
         log(self, message: "")
-        restManager.getLiveRates()
-        presentCurrencyViewController()
         soundManager.playSound(.Click)
+        presentCurrencyViewController()
+        
     
     }
     

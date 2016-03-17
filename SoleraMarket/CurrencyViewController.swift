@@ -13,11 +13,60 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     let soundManager = SoundManager.sharedInstance
     let shoppingBasket = ShoppingBasket.sharedInstance
+    let restManager = RESTManager.sharedInstance
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var view_picker: UIView!
+    @IBOutlet weak var view_failure: UIView!
     @IBOutlet weak var currencyPicker: UIPickerView!
+    @IBOutlet weak var label_failure: UILabel!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        label_failure.text = kMessageConnectionFailure
+        
+    }
     
     override func viewWillAppear(animated: Bool) {
-        currencyPicker.selectRow(shoppingBasket.currencyIndex, inComponent: 0, animated: false)
+        
+        setToLoadingState()
+        
+        restManager.getLiveRates({ (success) -> Void in
+            
+            if success {
+                self.performSelectorOnMainThread("setToReadyState", withObject: nil, waitUntilDone: false)
+            } else {
+                self.performSelectorOnMainThread("setToFailedState", withObject: nil, waitUntilDone: false)                
+            }
+            
+        })
+        
+    }
+    
+    func setToLoadingState() {
+        
+        activityIndicator.startAnimating()
+        view_picker.hidden = true
+        view_failure.hidden = true
+        
+    }
+    
+    func setToReadyState() {
+        
+        self.activityIndicator.stopAnimating()
+        self.currencyPicker.selectRow(self.shoppingBasket.currencyIndex, inComponent: 0, animated: false)
+        self.view_failure.hidden = true
+        self.view_picker.hidden = false
+        
+    }
+    
+    func setToFailedState() {
+    
+        self.activityIndicator.stopAnimating()
+        self.view_picker.hidden = true
+        self.view_failure.hidden = false
+        
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

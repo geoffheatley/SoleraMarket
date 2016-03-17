@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6C7C1EC01C99646000AD719A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1EBF1C99646000AD719A /* AppDelegate.swift */; };
-		6C7C1EC21C99646000AD719A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC11C99646000AD719A /* NavigationController.swift */; };
 		6C7C1EC51C99646000AD719A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC31C99646000AD719A /* Main.storyboard */; };
 		6C7C1EC71C99646000AD719A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC61C99646000AD719A /* Assets.xcassets */; };
 		6C7C1ECA1C99646000AD719A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */; };
@@ -53,7 +52,6 @@
 /* Begin PBXFileReference section */
 		6C7C1EBC1C99646000AD719A /* SoleraMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoleraMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7C1EBF1C99646000AD719A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C7C1EC11C99646000AD719A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6C7C1EC41C99646000AD719A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C7C1EC61C99646000AD719A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7C1EC91C99646000AD719A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,21 +130,14 @@
 		6C7C1EBE1C99646000AD719A /* SoleraMarket */ = {
 			isa = PBXGroup;
 			children = (
-				6CF3B8F31C9ABAF00086C55B /* Managers */,
 				6C7C1EED1C9964A000AD719A /* Globals.swift */,
 				6C7C1EBF1C99646000AD719A /* AppDelegate.swift */,
-				6C7C1EC31C99646000AD719A /* Main.storyboard */,
-				6C7C1EC61C99646000AD719A /* Assets.xcassets */,
-				6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */,
-				6CF3B8E71C9A263D0086C55B /* StoreProducts.plist */,
-				6C7C1ECB1C99646000AD719A /* Info.plist */,
+				6CCC7B871C9B253E00448338 /* Utilities */,
+				6CF3B8F31C9ABAF00086C55B /* Managers */,
+				6CCC7B8A1C9B26B000448338 /* Objects */,
 				6C7C1EEF1C99654300AD719A /* ViewControllers */,
-				6CF3B8EB1C9A43C20086C55B /* BaseCell.swift */,
-				6CF3B8E51C9A15780086C55B /* StoreCell.swift */,
-				6CF3B8E91C9A438E0086C55B /* CheckoutCell.swift */,
-				6CCC7B851C9AFE2A00448338 /* CheckoutFooter.swift */,
-				6CF3B8ED1C9A44F30086C55B /* ShoppingBasket.swift */,
-				6CF3B8EF1C9A45EE0086C55B /* ProductOrder.swift */,
+				6CCC7B881C9B255100448338 /* Views */,
+				6CCC7B891C9B264400448338 /* Supporting Files */,
 			);
 			path = SoleraMarket;
 			sourceTree = "<group>";
@@ -173,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				6C7C1EF41C996F9B00AD719A /* WelcomeViewController.swift */,
-				6C7C1EC11C99646000AD719A /* NavigationController.swift */,
 				6CF3B8F11C9A47BF0086C55B /* BaseCollectionViewController.swift */,
 				6C7C1EF01C996A2D00AD719A /* StoreViewController.swift */,
 				6C7C1EF21C996A6200AD719A /* CheckoutViewController.swift */,
@@ -182,10 +172,49 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		6CF3B8F31C9ABAF00086C55B /* Managers */ = {
+		6CCC7B871C9B253E00448338 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				6CF3B8FD1C9ACFC50086C55B /* NSURLRequest+Readout.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		6CCC7B881C9B255100448338 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1EC81C99646000AD719A /* LaunchScreen.storyboard */,
+				6C7C1EC31C99646000AD719A /* Main.storyboard */,
+				6CF3B8EB1C9A43C20086C55B /* BaseCell.swift */,
+				6CF3B8E51C9A15780086C55B /* StoreCell.swift */,
+				6CF3B8E91C9A438E0086C55B /* CheckoutCell.swift */,
+				6CCC7B851C9AFE2A00448338 /* CheckoutFooter.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6CCC7B891C9B264400448338 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1ECB1C99646000AD719A /* Info.plist */,
+				6CF3B8E71C9A263D0086C55B /* StoreProducts.plist */,
+				6C7C1EC61C99646000AD719A /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CCC7B8A1C9B26B000448338 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6CF3B8EF1C9A45EE0086C55B /* ProductOrder.swift */,
+				6CF3B8ED1C9A44F30086C55B /* ShoppingBasket.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		6CF3B8F31C9ABAF00086C55B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
 				6CF3B8F41C9ABB080086C55B /* SoundManager.swift */,
 				6CF3B8F91C9ABD420086C55B /* RESTManager.swift */,
 			);
@@ -343,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7C1EC21C99646000AD719A /* NavigationController.swift in Sources */,
 				6CF3B8FE1C9ACFC50086C55B /* NSURLRequest+Readout.swift in Sources */,
 				6C7C1EF11C996A2D00AD719A /* StoreViewController.swift in Sources */,
 				6C7C1EC01C99646000AD719A /* AppDelegate.swift in Sources */,

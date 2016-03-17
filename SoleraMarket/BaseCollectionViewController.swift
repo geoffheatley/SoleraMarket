@@ -13,7 +13,6 @@ class BaseCollectionViewController: UICollectionViewController {
     
     let shoppingBasket = ShoppingBasket.sharedInstance
     let soundManager = SoundManager.sharedInstance
-    let restManager = RESTManager.sharedInstance
     
     var array_products = NSMutableArray()
     
