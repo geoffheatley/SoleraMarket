@@ -34,10 +34,20 @@ class ProductOrder: NSObject {
             return nil
         }
         
+        guard let productPrice = priceNumber.floatValue where priceIsValid(priceNumber.floatValue) else {
+            return nil
+        }
+        
         productName = name
-        price = priceNumber.floatValue
+        price = productPrice
         orderQuantity = quantity        
         
-    }    
+    }
+    
+    func priceIsValid(price: Float) -> Bool {
+        
+        return price > 0 ? true : false
+        
+    }
     
 }
