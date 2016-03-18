@@ -36,7 +36,7 @@ class WelcomeViewController: UIViewController {
    
     @IBAction func done(segue: UIStoryboardSegue) {
         
-        print("Logout")
+        log(self, message: "Logged Out")
         shoppingBasket.resetShoppingBasket()
         
     }    

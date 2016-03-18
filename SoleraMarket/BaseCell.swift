@@ -34,21 +34,23 @@ class BaseCell: UICollectionViewCell {
             
         }
         
-        let productOrder = ProductOrder(name: label_name.text!, quantity: count)
+        if let productOrder = ProductOrder(name: label_name.text!, quantity: count) {
         
-        if count == 0 {
-            
-            if sender.tag == 0 {
-                label_count.textColor = kTextColour_normal
-                label_count.backgroundColor = kFieldColour_normal
+            if count == 0 {
+                
+                if sender.tag == 0 {
+                    label_count.textColor = kTextColour_normal
+                    label_count.backgroundColor = kFieldColour_normal
+                }
+                
+                self.viewController?.shoppingBasket.items.removeObjectForKey(label_name.text!)
+                
+            } else {            
+                
+                self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
+                
             }
-            
-            self.viewController?.shoppingBasket.items.removeObjectForKey(label_name.text!)
-            
-        } else {            
-            
-            self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
-            
+    
         }
         
         label_count.text = "\(count)"
@@ -75,10 +77,12 @@ class BaseCell: UICollectionViewCell {
         
         log(self, message: "count: \(count)")
         
-        let productOrder = ProductOrder(name: label_name.text!, quantity: count)        
-        self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
+        if let productOrder = ProductOrder(name: label_name.text!, quantity: count) {
+            self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
+        }
         
         self.viewController!.shoppingBasket.updateRunningTotal()
+            
         self.viewController!.collectionView!.reloadData()
         
     }

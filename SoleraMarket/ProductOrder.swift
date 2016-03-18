@@ -14,21 +14,29 @@ class ProductOrder: NSObject {
     var price: Float!
     var orderQuantity: UInt!
     
-    init(name: String, quantity: UInt) {
+    init?(name: String, quantity: UInt) {
         
-        guard let path = NSBundle.mainBundle().pathForResource(kProductsPlistName, ofType:"plist") else {
-            return            
+        super.init()
+        
+        guard let path = NSBundle.mainBundle().pathForResource(kProductsPlistName, ofType:"plist") where name != "" && quantity > 0 else {
+            return nil
         }
         
-        let dict_products = NSDictionary(contentsOfFile: path)
-        
-        if let dict_product = dict_products?.objectForKey(name) {
-            
-            productName = name
-            price = dict_product.objectForKey(kKey_price)?.floatValue
-            orderQuantity = quantity
-            
+        guard let dict_products = NSDictionary(contentsOfFile: path) else {
+            return nil
         }
+        
+        guard let dict_product = dict_products.objectForKey(name) else {
+            return nil
+        }
+        
+        guard let priceNumber = dict_product.objectForKey(kKey_price) else {
+            return nil
+        }
+        
+        productName = name
+        price = priceNumber.floatValue
+        orderQuantity = quantity        
         
     }    
     

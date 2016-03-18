@@ -21,6 +21,8 @@ SoleraMarket has been tested on the following device configurations;
 - **iPad Air2** (iOS 9.2.1)
 - **iPad Pro** (iOS 9.2.1)
 
+- Run Unit Tests using the Simulator
+
 ## How To Get Started
 
 - Clone and then open SoleraMarket.xcodeproj with XCode 7

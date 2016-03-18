@@ -35,29 +35,29 @@ class RESTManager: NSObject {
         
         session.dataTaskWithRequest(request, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             
-            if data != nil {
-                
-                do {
-                    let dict_json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)
-                    log(self, message: "dict_json: \(dict_json)")
-                    self.shoppingBasket.dict_exchangeRates = (dict_json.objectForKey("quotes") as? NSMutableDictionary)!
-                    completionHandler(success: true)
-                    
-                } catch {
-                    log(self, message: "JSON error")
-                    completionHandler(success: false)
-                    //return
-                }
-                
-                
-            } else {
-            
+            guard error == nil && data != nil  else {
+                log(self, message: "Failed to download data")
                 completionHandler(success: false)
-                
+                return
             }
+            
+            do {
+                let dict_json = try self.parseJSONData(data!, options: []) as! NSDictionary
+                log(self, message: "dict_json: \(dict_json)")
+                self.shoppingBasket.dict_exchangeRates = (dict_json.objectForKey("quotes") as? NSMutableDictionary)!
+                completionHandler(success: true)
+            } catch {
+                log(self, message: "Unexpected data format provided by server")
+                completionHandler(success: false)
+            }
+
             
         }).resume() 
         
+    }
+    
+    func parseJSONData(data: NSData, options opt: NSJSONReadingOptions) throws -> AnyObject {
+        return try NSJSONSerialization.JSONObjectWithData(data, options: opt)
     }
     
 }
