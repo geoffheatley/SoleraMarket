@@ -69,7 +69,7 @@ let kFieldColour_selected = UIColor(red: 1.0, green: 0.7, blue: 0.7, alpha: 1.0)
 
 //MARK: Utility Functions
 
-func log(sender: NSObject, message: String, functionName: String = __FUNCTION__) {
+func log(sender: NSObject, message: String, functionName: String = #function) {
     
     #if DEBUG
         if message == "" {

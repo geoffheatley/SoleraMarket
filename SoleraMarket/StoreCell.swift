@@ -11,19 +11,18 @@ import UIKit
 
 class StoreCell: BaseCell {
     
-    
-    
-    
-    
-    
     func setup(name: String, indexPath: NSIndexPath) {
         
         //log(self, message: "self.viewController!.shoppingBasket.itemArray(): \(self.viewController!.shoppingBasket.productOrdersArray())")
             
         if let productOrder = viewController!.shoppingBasket.items.objectForKey(name) as? ProductOrder {
+            
+            log(self, message: "EXISTS")
                 
             imageView.image = UIImage(named: "\(kProductImagePrefix)\(productOrder.productName)")
             log(self, message: "imageName: \(kProductImagePrefix)\(productOrder.productName)")
+            
+            label_name.text = name
             label_count.text = "\(productOrder.orderQuantity)"
             label_price.text = String(format: "$%.2f", productOrder.price)
             
@@ -33,6 +32,8 @@ class StoreCell: BaseCell {
             count = productOrder.orderQuantity
                 
         } else {
+            
+            log(self, message: "DOES NOT EXIST")
             
             let dict_product: NSDictionary = self.viewController!.array_products.objectAtIndex(indexPath.item) as! NSDictionary
             let name: String = dict_product.objectForKey(kKey_name) as! String
@@ -56,6 +57,7 @@ class StoreCell: BaseCell {
     override func prepareForReuse() {
         
         count = 0
+        label_name.text = ""
         label_count.text = "\(count)"
         label_count.textColor = kTextColour_normal
         label_count.backgroundColor = kFieldColour_normal

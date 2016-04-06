@@ -5,6 +5,7 @@
 ## About
 
 - Universal Application for iOS7+
+- Swift 2.2
 
 SoleraMarket is a concise little demo supermarket app for connecting to JSONRates API and converting between currencies.
 
@@ -15,7 +16,7 @@ Shop til you drop as long as you like Eggs, Peas, Milk and Beans.
 SoleraMarket has been tested on the following device configurations;
 
 - **iPhone5S** (iOS 8.0)
-- **iPhone6** (iOS 9.2.1)
+- **iPhone6** (iOS 9.3.1)
 - **iPhone6 Plus** (iOS 9.2.1)
 - **iPad Air** (iOS 9.2.1)
 - **iPad Air2** (iOS 9.2.1)

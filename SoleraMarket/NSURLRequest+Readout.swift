@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSURLRequest: CustomDebugStringConvertible {
+extension NSURLRequest {
     
     public func extendedDescription() -> String {
         

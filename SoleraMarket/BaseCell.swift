@@ -24,18 +24,12 @@ class BaseCell: UICollectionViewCell {
     
     @IBAction func subtractButtonPressed(sender: UIButton!) {
         
-        log(self, message: "")
-        
         self.viewController!.soundManager.playSound(.Click)
         
         if count > 0 {
             
-            count--
+            count -= 1
             
-        }
-        
-        if let productOrder = ProductOrder(name: label_name.text!, quantity: count) {
-        
             if count == 0 {
                 
                 if sender.tag == 0 {
@@ -45,19 +39,23 @@ class BaseCell: UICollectionViewCell {
                 
                 self.viewController?.shoppingBasket.items.removeObjectForKey(label_name.text!)
                 
-            } else {            
+            } else {
                 
-                self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
+                if let productOrder = ProductOrder(name: label_name.text!, quantity: count) {
+                
+                    self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)
+                    
+                }
                 
             }
-    
+            
+            label_count.text = "\(count)"
+            
+            self.viewController!.shoppingBasket.updateRunningTotal()
+            self.viewController!.collectionView!.reloadData()
+            
         }
-        
-        label_count.text = "\(count)"
-        
-        self.viewController!.shoppingBasket.updateRunningTotal()
-        self.viewController!.collectionView!.reloadData()
-        
+    
     }
     
     @IBAction func addButtonPressed(sender: UIButton!) {
@@ -66,7 +64,7 @@ class BaseCell: UICollectionViewCell {
         
         self.viewController!.soundManager.playSound(.Click)
         
-        count++
+        count += 1
         
         label_count.text = "\(count)"
         
@@ -74,8 +72,6 @@ class BaseCell: UICollectionViewCell {
             label_count.textColor = kTextColour_selected
             label_count.backgroundColor = kFieldColour_selected
         }
-        
-        log(self, message: "count: \(count)")
         
         if let productOrder = ProductOrder(name: label_name.text!, quantity: count) {
             self.viewController?.shoppingBasket.items.setObject(productOrder, forKey: label_name.text!)

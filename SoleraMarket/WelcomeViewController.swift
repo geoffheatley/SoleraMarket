@@ -39,6 +39,7 @@ class WelcomeViewController: UIViewController {
         log(self, message: "Logged Out")
         shoppingBasket.resetShoppingBasket()
         
-    }    
+    }
+  
     
 }

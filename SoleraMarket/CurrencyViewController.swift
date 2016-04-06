@@ -35,9 +35,9 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         restManager.getLiveRates({ (success) -> Void in
             
             if success {
-                self.performSelectorOnMainThread("setToReadyState", withObject: nil, waitUntilDone: false)
+                self.performSelectorOnMainThread(#selector(self.setToReadyState), withObject: nil, waitUntilDone: false)
             } else {
-                self.performSelectorOnMainThread("setToFailedState", withObject: nil, waitUntilDone: false)                
+                self.performSelectorOnMainThread(#selector(self.setToFailedState), withObject: nil, waitUntilDone: false)
             }
             
         })
